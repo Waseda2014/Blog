@@ -2,52 +2,57 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <!--
         <link href="css/reset.css" rel="stylesheet" type="text/css">
-        -->
         <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Teko:300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!--font awesome web fonts for icons-->
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
         <title>designation.io</title>
     </head>
     <body>
-        <header>
-            <h1> STOCK PHOTOS THAT DON'T SUCK</h1>
-            <p>A list of places to find the best free stock photos</p>
+        <header class="intro">
+            <div>
+                <h1> STOCK PHOTOS THAT DON'T SUCK</h1>
+                <p>A list of places to find the best free stock photos</p>
+            </div>
         </header>
         <main>
-            <article>
-                <h2>DUSTIN SENOS</h2>
-                <h3>ART<span>&amp;</span>DESIGN</h3>
-                <h3 class="date_location">
-                    <time datetime="2014-01-22">22 JANURARY 2024</time>
-                    </h3>
-                    <P>
+            <article >
+                <section>
+                    <h2><img class="portrait" src="img/portrait.png">DUSTIN SENOS</h2>
+                    <h3 class="profession">ART<span>&amp;</span>DESIGN</h3>
+                    <h3 class="date_location">
+                        <time datetime="2014-01-22">22 JANURARY 2024</time>
+                        </h3>
+                </section>
+                    <P class="main_text">
                         Finding great stock photos is a pain. You&#8217;re left with either low-res amateur photos, people wearing cheesy headsets, or photos that are out of budget for the project you&#8217;re working on. Below is an ongoing list (so bookmark it) of the best stock photo sites I&#8217;ve come across.
                     </P>
-                    <ul>
-                        <li>Little Visuals <a href="http://littlevisuals.co/">http://littlevisuals.co/</a></li>
-                        <li>Unsplash <a href="http://unsplash.com/">http://unsplash.com/</a></li>
-                        <li>Death to the Stock Photo <a href="http://join.deathtothestockphoto.com/">http://join.deathtothestockphoto.com/</a></li>
-                        <li>New Old Stock <a href="http://nos.twnsnd.co/">http://nos.twnsnd.co/</a></li>
-                        <li>Superfamous &#40;requires attribution&#41; <a href="http://superfamous.com/">http://superfamous.com/</a></li>
-                        <li>Picjumbo <a href="http://picjumbo.com/">http://picjumbo.com/</a></li>
-                        <li>The Pattern Library <a href="http://thepatternlibrary.com/">http://thepatternlibrary.com/</a></li>
-                        <li>Gratisography <a href="http://gratisography.com/">http://gratisography.com/</a></li>
-                        <li>Getrefe <a href="http://getrefe.tumblr.com/">http://getrefe.tumblr.com/</a></li>
-                        <li>IM Free &#40;requires attribution&#41; <a href="http://imcreator.com/free/">http://imcreator.com/free/</a></li>
-                        <li>Jay Mantri <a href="http://jaymantri.com/">http://jaymantri.com/</a></li>
-                        <li>Public Domain Archive <a href="http://publicdomainarchive.com/">http://publicdomainarchive.com/</a></li>
+                    <ul class="list">
+                        <li>Little Visuals <a href="http://littlevisuals.co/" target="_blank" >http://littlevisuals.co/</a></li>
+                        <li>Unsplash <a href="http://unsplash.com/" target="_blank">http://unsplash.com/</a></li>
+                        <li>Death to the Stock Photo <a href="http://join.deathtothestockphoto.com/" target="_blank">http://join.deathtothestockphoto.com/</a></li>
+                        <li>New Old Stock <a href="http://nos.twnsnd.co/" target="_blank">http://nos.twnsnd.co/</a></li>
+                        <li>Superfamous &#40;requires attribution&#41; <a href="http://superfamous.com/" target="_blank">http://superfamous.com/</a></li>
+                        <li>Picjumbo <a href="http://picjumbo.com/" target="_blank">http://picjumbo.com/</a></li>
+                        <li>The Pattern Library <a href="http://thepatternlibrary.com/" target="_blank">http://thepatternlibrary.com/</a></li>
+                        <li>Gratisography <a href="http://gratisography.com/" target="_blank">http://gratisography.com/</a></li>
+                        <li>Getrefe <a href="http://getrefe.tumblr.com/" target="_blank">http://getrefe.tumblr.com/</a></li>
+                        <li>IM Free &#40;requires attribution&#41; <a href="http://imcreator.com/free/" target="_blank">http://imcreator.com/free/</a></li>
+                        <li>Jay Mantri <a href="http://jaymantri.com/" target="_blank">http://jaymantri.com/</a></li>
+                        <li>Public Domain Archive <a href="http://publicdomainarchive.com/" target="_blank">http://publicdomainarchive.com/</a></li>
                     </ul>
                     
-                    <section>
+                    <section class="reply">
                         <h3 class="feedback">LEAVE A REPLY</h3>
-                        <form id="name" action="" class="name">
+                        <form id="comment" action="" class="comment">
                             <input type="text" placeholder="Your Name">
+                            <textarea name="comment" placeholder="Please enter your message" cols="30" rows="10"></textarea>
+                            <button type="button">ADD COMMENT</button>
                         </form>
-                        <textarea name="comment" id="comment" placeholder="Please enter your message" cols="30" rows="10"></textarea>
-                        <button type="button">ADD COMMENT</button>
                     </section>
                     
                 
@@ -55,20 +60,26 @@
                         <h3 id="post">SHARE THIS POST</h3>
                         <p id="share">If you like this article, please take a second to share it with the world and help idealUI grow&#33;</p>
 
-                        <div class="share">
-                           <ul>
-                               <li><i class="fa fa-facebook"></i> facebook<a href=""></a></li>
-                               <li><i class="fa fa-twitter"></i> twitter<a href=""></a></li>
-                               <li><i class="fa fa-pinterest"></i> pinterest<a href=""></a></li>
-                               <li><i class="fa fa-google-plus"></i> google<a href=""></a></li>
+                        <div class="share_buttons" >
+                           <ul class="share">
+                               <li><a href="http://www.facebook.com/"><i class="fa fa-facebook"></i> facebook</a></li>
+                               <li><a href="http://www.twitter.com/"><i class="fa fa-twitter"></i> twitter</a></li>
+                               <li><a href="http://www.pinterest.com/"><i class="fa fa-pinterest"></i>pinterest</a></li>
+                               <li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i>google</a></li>
                            </ul>
                        </div>
                    </section>
                 
-                <aside class="page_link">
-                    <div><a href="#"><span class="light">PREVIOUS</span>HOW TO GET STARTED ON YOUR OWN CREATIVE STUDIO</a></div>
-                    <div><a href="#"><span class="light">NEXT</span>ENHANCING USER EXPERIENCE WITH THE WEB SPEECH WITH API</a></div>
-                   </aside>
+                <aside class="page_link cf">
+                    <a href="#" class="previous">
+                        <div><span class="light">PREVIOUS</span>HOW TO GET STARTED ON YOUR OWN CREATIVE STUDIO</div>
+                    </a>
+                    
+                    <a href="#" class="next">
+                        <div><span class="light">NEXT</span>ENHANCING USER EXPERIENCE WITH THE WEB SPEECH WITH API</div>
+                    </a>
+
+                </aside>
             
             </article>
         </main>
