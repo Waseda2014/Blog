@@ -177,7 +177,7 @@ form button:hover{
 
 .share_buttons{
 	margin: 0 auto;
-	width:80%;
+	display: inline-block;
 }
 
 .share a {
@@ -187,22 +187,22 @@ form button:hover{
     font-family: Teko, Helvetica, Arial, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+    border-style: solid;
+    border-color: #d7d5d5;
+    border-width: 2px;	
+    margin: 5px;
+    height: 50px;
+    width: 270px;
+    text-align: center;
+    padding:0.75rem;
+    float: left;
 }
 
 .share_buttons ul li{
-	display:block;
-	border-style: solid;
-	border-color: #d7d5d5;
-	border-width: 2px;	
-	margin-left:1.5%;
-	height: 50px;
-	width: 23%;
-	text-align: center;
-	padding:0.75rem;
-	float:left;
+	display: inline-block;
 }
 
-.share li:hover{
+.share li a:hover{
 	color:white;
 	background-color: #f63c3c; 
 	-webkit-transition: all 0.3s ease-out;
@@ -217,6 +217,7 @@ form button:hover{
 	height:310px;
 	margin-top:37px;
 	position: relative;
+	margin
 }
 
 .previous{
@@ -255,7 +256,7 @@ form button:hover{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color:white;
-	font-size:1.56rem;
+	font-size:25px;
 }
 
 .page_link div a{
@@ -265,7 +266,7 @@ form button:hover{
 
 .light{
 	font-family: Teko, Helvetica, Arial, sans-serif;
-	font-size:1.875rem;
+	font-size:30px;
 	font-weight: 300;
 	display:block;
 	color:#b3b1b2;
@@ -275,7 +276,7 @@ form button:hover{
 /*footer*/
 footer{
 	font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
-	font-size:0.875rem;
+	font-size:14px;
 	position:relative;
 	height:68px;
 }
@@ -306,252 +307,3 @@ footer{
 }
 
 
-
-@media screen and (max-width: 1024px){
-	/*header*/
-	header{
-		height: 25rem;
-	}
-
-	/*previous next*/
-	.page_link a{
-		height:200px;
-
-	}
-
-	.page_link a div{
-		font-size:1.3rem;
-	}
-
-	.light{
-		font-size:1.5rem;
-		font-weight: 300;
-		margin-bottom:30px;
-	}
-
-}
-
-
-
-@media screen and (max-width: 768px){
-	/*header*/
-	header{
-		height: 20rem;
-	}
-
-	header div{
-		width:300px;
-	}
-
-	header h1{
-		font-size:2rem;
-		line-height: 1.2em;
-		height:3rem;
-	}
-	header div p{
-		font-size: 0.8rem;
-	}
-	
-	/* section intro */
-	
-	article h2{
-		text-align: center;
-		font-size:1.5rem;
-		font-family: Teko, Helvetica, Arial, sans-serif;
-		font-weight: 300;
-	}
-
-	.profession, .date_location{
-		font-size: 1rem;
-	}
-
-	.profession{
-		color:#f63c3c;
-		padding-top: 0.5rem;
-	}
-
-	.date_location{
-		padding-top:0.5rem;
-	}
-	
-	/*main article*/
-	.main_text, .list{
-		width:80%;
-		font-size: 1rem;
-		padding-top: 1.8rem;
-	}
-
-	/*comment section*/
-	.feedback{
-		font-size:1.5rem;
-	}
-	.reply{
-		width:90%;
-	}
-	form input{
-		width: 100%;
-		margin-top: 1.3rem;
-		height:35px;
-	}
-	form textarea{
-		width:100%;
-		padding: 1rem;
-		margin-bottom:8px;
-		height:150px;
-	}
-
-	form button{
-		margin-bottom:50px;
-	}
-
-
-/*share buttons*/
-	.texts{
-		visibility:hidden;
-		position:absolute;
-	}
-
-/*previous next*/
-	.page_link a{
-		height:175px;
-	}
-
-	.page_link a div{
-		font-size:0.8rem;
-	}
-
-	.light{
-		font-size:1.5rem;
-		font-weight: 300;
-		margin-bottom:15px;
-	}
-
-	/*footer*/
-
-}
-
-
-@media screen and (max-width:480px){
-	/*header*/
-	header{
-		height: 10rem;
-	}
-
-	header div{
-		width:250px;
-	}
-
-	header h1{
-		font-size:1.5rem;
-		line-height: 1.2em;
-		height:4.5rem;
-	}
-	header div p{
-		font-size: 0.5rem;
-		margin-top: 0rem;
-		visibility: hidden;
-	}
-	
-	/*section intro*/
-
-	.portrait{
-		display: block;
-		margin:0 auto;
-		transform: translateY(-50%);
-		height:40px;
-		width:40px;
-	}
-
-	.profession, .date_location{
-		font-size: 0.8rem;
-	}
-
-	/*main article*/
-	.main_text, .list{
-		width:80%;
-		padding-top: 1rem;
-	}
-
-	.list{
-		padding-top: 2rem;
-	}
-
-	/*comment section*/
-	.feedback{
-		font-size:1.4rem;
-		text-align: center;
-	}
-
-	form textarea{
-		width:100%;
-		padding: 0.7rem;
-		margin-bottom:8px;
-	}
-
-	.reply button{
-		margin-top: 0px;
-		margin-left:auto;
-		margin-right:auto;
-		margin-bottom:70px;
-	}
-
-
-	/*share buttons*/
-	.social_media{
-		position: relative;
-	}
-
-	#share{
-		visibility: hidden;
-		position:absolute;
-	
-	}
-
-	.description{
-		visibility:hidden;
-		position:absolute;
-	}
-
-	/*previous next*/
-	.page_link a{
-		height:75px;
-	}
-
-	.page_link a div{
-		font-size:1.3rem;
-		top:70%;
-	}
-
-
-
-	.light{
-		font-size:1.5rem;
-		font-weight: 300;
-		margin-bottom:30px;
-	}
-
-
-	/*footer*/
-	footer{
-		font-size:0.6rem;
-	}
-
-	footer p{
-		display:block;
-		margin: 0 auto;
-	}
-
-	#copyright{
-		left:50%;
-		text-align: center;
-	}
-
-
-	#terms{
-			left:50%;
-			top:100%;
-			transform: translateX(-50%);
-			padding:27px 0px;
-		}
-
-}
